@@ -9,7 +9,7 @@ hero:
   actions:
     - theme: brand
       text: 嵌入式 & 软件开发
-      link: /ESWDEV
+      link: /ESWDev
     - theme: alt
       text: 生活 & 玩乐
       link: /Journal/Blog
