@@ -5,8 +5,10 @@ export default defineConfig({
     title: "Judu's Wiki",
     description: "学习、记录",
     lang: 'zh-CN',
-    head: [['link', { rel: 'icon', href: '/icon.ico' }]],
-    srcDir: './src',
+    head: [
+        ['link', { rel: 'icon', href: '/icon.ico' }]
+    ],
+    // srcDir: './src',
     locales: {
 
         root: {
@@ -48,50 +50,47 @@ export default defineConfig({
 
         nav: [
             { text: 'Home', link: '/' },
-            { text: '嵌入式 & 软件开发', link: '/Linux/' }
+            { text: '嵌入式 & 软件开发', link: '/ESWDev/', },
+            { text: '生活 & 玩乐', link: '/Journal/Blog', }
         ],
 
-        sidebar: [
-            {
-                text: '嵌入式 & 软件开发',
-                items: [
-                    {
-                        text: 'Linux',
-                        items: [
-                            // {
-                            //     text: 'Linux 驱动开发基础',
-                            //     link: '/Linux/LinuxDriver/',
-                            //     collapsed: true,
-                            //     items: [
-                            //         {text:'a',link:'a.md'},
-                            //         {text:'b',link:'b.md'},
-                            //     ]
-                            // },
-                            // {
-                            //     text: 'Linux 应用开发基础',
-                            //     link: '/Linux/LinuxApp/',
-                            //     collapsed: true,
-                            //     items: [
-                            //         {text:'a',link:''},
-                            //         {text:'b',link:''},
-                            //     ]
-                            // },
-                            {
-                                text: 'Linux 基础知识',
-                                // link: '/Linux/LinuxNotes/',
-                                collapsed: true,
-                                items: [
-                                    { text: 'tar命令', link: '/Linux/LinuxNotes/tar' },
-                                    { text: 'tmux', link: '/Linux/LinuxNotes/tmux' },
-                                ]
-                            }
-                        ],
-                        link: '/Linux/',
-                        collapsed: true
-                    }
-                ]
-            }
-        ],
+        sidebar: {
+            '/ESWDev': [
+                {
+                    text: '嵌入式 & 软件开发',
+                    items: [
+                        {
+                            text: 'Linux Notes',
+                            // link: '/ESWDev/LinuxNotes/',
+                            collapsed: true,
+                            items: [
+                                { text: 'tar命令', link: '/ESWDev/LinuxNotes/tar' },
+                                { text: 'tmux', link: '/ESWDev/LinuxNotes/tmux' },
+                                { text: '257&DEP', link: '/ESWDev/LinuxNotes/257&DEP' },
+                                { text: '多线程编程', link: '/ESWDev/LinuxNotes/多线程编程' },
+                            ],
+                        }
+                    ],
+                    link: '/ESWDev'
+                }
+            ],
+            '/Journal': [
+                {
+                    text: '生活 & 玩乐',
+                    items: [
+                        {
+                            text: 'Blog',
+                            collapsed: true,
+                            items: [
+                                { text: 'a', link: '/Journal/Blog/a.md' },
+                                { text: 'b', link: '/Journal/Blog/b.md' },
+                            ]
+                        }
+                    ],
+                    link: '/Journal/Blog',
+                }
+            ]
+        },
 
         docFooter: {
             prev: '上一页',
@@ -99,7 +98,7 @@ export default defineConfig({
         },
 
         editLink: {
-            pattern: 'https://github.com/vuejs/vitepress/edit/main/docs/:path',
+            pattern: 'https://github.com/JuduAB/juduAB/tree/main/docs/:path',
             text: '在 GitHub 上编辑此页面'
         },
 
@@ -121,7 +120,7 @@ export default defineConfig({
         lightModeSwitchTitle: '切换到浅色模式',
         darkModeSwitchTitle: '切换到深色模式',
         skipToContentLabel: '跳转到内容',
-        
+
         socialLinks: [
             { icon: 'github', link: 'https://github.com/juduAB' }
         ],
