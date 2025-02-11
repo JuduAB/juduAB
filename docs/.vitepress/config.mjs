@@ -93,6 +93,11 @@ export default defineConfig({
             }
         ],
 
+        footer: {
+            selectText: "选择",
+            navigateText: "切换",
+        },
+        
         socialLinks: [
             { icon: 'github', link: 'https://github.com/juduAB' }
         ],
