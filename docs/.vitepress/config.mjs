@@ -113,6 +113,7 @@ export default defineConfig({
                 timeStyle: 'medium'
             }
         },
+        
         langMenuLabel: '多语言',
         returnToTopLabel: '回到顶部',
         sidebarMenuLabel: '菜单',
