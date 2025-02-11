@@ -8,6 +8,7 @@ export default defineConfig({
     head: [
         ['link', { rel: 'icon', href: '/icon.ico' }]
     ],
+    cleanUrls: true,
     // srcDir: './src',
     locales: {
 
