@@ -93,11 +93,11 @@ export default defineConfig({
             }
         ],
 
-        footer: {
-            selectText: "选择",
-            navigateText: "切换",
+        docFooter: {
+            prev: '上一页',
+            next: '下一页'
         },
-        
+
         socialLinks: [
             { icon: 'github', link: 'https://github.com/juduAB' }
         ],
