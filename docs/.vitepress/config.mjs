@@ -69,6 +69,12 @@ export default defineConfig({
                                 { text: 'tmux', link: '/ESWDev/LinuxNotes/tmux' },
                                 { text: '257&DEP', link: '/ESWDev/LinuxNotes/257&DEP' },
                                 { text: '多线程编程', link: '/ESWDev/LinuxNotes/多线程编程' },
+                                {
+                                    text: 'ASLA 子系统', 
+                                    items: [
+                                        { text: 'ASLA 子系统（一）概述', link: '/ESWDev/LinuxNotes/ALSA/概述.md' },
+                                    ]
+                                },
                             ],
                         }
                     ],
@@ -104,7 +110,8 @@ export default defineConfig({
         },
 
         outline: {
-            label: '页面导航'
+            label: '页面导航',
+            level: 'deep'
         },
 
         lastUpdated: {
