@@ -71,6 +71,7 @@ export default defineConfig({
                                 { text: '多线程编程', link: '/ESWDev/LinuxNotes/多线程编程' },
                                 {
                                     text: 'ASLA 子系统', 
+                                    collapsed: true,
                                     items: [
                                         { text: 'ASLA 子系统（一）概述', link: '/ESWDev/LinuxNotes/ALSA/概述.md' },
                                     ]
