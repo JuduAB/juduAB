@@ -79,6 +79,7 @@ export default defineConfig({
                             items: [
                                 {
                                     text: 'ASLA 子系统', 
+                                    collapsed: true,
                                     items: [
                                         { text: 'ASLA 子系统（一）概述', link: '/ESWDev/LinuxDriver/ALSA/概述.md' },
                                     ]
