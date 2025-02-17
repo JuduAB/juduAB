@@ -69,16 +69,24 @@ export default defineConfig({
                                 { text: 'tmux', link: '/ESWDev/LinuxNotes/tmux' },
                                 { text: '257&DEP', link: '/ESWDev/LinuxNotes/257&DEP' },
                                 { text: '多线程编程', link: '/ESWDev/LinuxNotes/多线程编程' },
+                                { text: '虚拟机磁盘扩展', link: '/ESWDev/LinuxNotes/虚拟机磁盘扩展' }
+                            ],
+                        },
+                        {
+                            text: 'Linux 驱动',
+                            // link: '/ESWDev/LinuxNotes/',
+                            collapsed: true,
+                            items: [
                                 {
                                     text: 'ASLA 子系统', 
                                     items: [
-                                        { text: 'ASLA 子系统（一）概述', link: '/ESWDev/LinuxNotes/ALSA/概述.md' },
+                                        { text: 'ASLA 子系统（一）概述', link: '/ESWDev/LinuxDriver/ALSA/概述.md' },
                                     ]
                                 },
                             ],
                         }
                     ],
-                    link: '/ESWDev'
+                    // link: '/ESWDev'
                 }
             ],
             '/Journal': [
