@@ -67,7 +67,7 @@ export default defineConfig({
                             items: [
                                 { text: 'tar命令', link: '/ESWDev/LinuxNotes/tar' },
                                 { text: 'tmux', link: '/ESWDev/LinuxNotes/tmux' },
-                                { text: '257&DEP', link: '/ESWDev/LinuxNotes/257&DEP' },
+                                //{ text: '257&DEP', link: '/ESWDev/LinuxNotes/257&DEP' },
                                 { text: '多线程编程', link: '/ESWDev/LinuxNotes/多线程编程' },
                                 { text: '虚拟机磁盘扩展', link: '/ESWDev/LinuxNotes/虚拟机磁盘扩展' },
                                 { text: '多核处理器基础', link: '/ESWDev/LinuxNotes/多核处理器基础' },
