@@ -21,6 +21,12 @@ export default defineConfig({
         //     lang: 'en'
         // }
     },
+    markdown: {
+        image: {
+            lazyLoading: true,   // 默认禁用；设置为 true 可为所有图片启用懒加载。
+        },
+        lineNumbers: false,    // 默认禁用；设置为 true 可在代码块中禁用行号。
+    },
     themeConfig: {
         // https://vitepress.dev/reference/default-theme-config
 
