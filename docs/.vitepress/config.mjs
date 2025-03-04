@@ -56,9 +56,9 @@ export default defineConfig({
         },
 
         nav: [
-            { text: 'Home', link: '/' },
-            { text: '嵌入式 & 软件开发', link: '/ESWDev/', },
-            { text: '生活 & 玩乐', link: '/Journal/Blog', }
+            { text: 'Home', link: '/', activeMatch: '^/$|^/Home/' },
+            { text: '嵌入式 & 软件开发', link: '/ESWDev/', activeMatch: '^/ESWDev/' },
+            { text: '生活 & 玩乐', link: '/Journal/Blog', activeMatch: '^/Journal/' },
         ],
 
         sidebar: {
