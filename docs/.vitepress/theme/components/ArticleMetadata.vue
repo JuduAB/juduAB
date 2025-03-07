@@ -83,7 +83,7 @@ onMounted(() => {
     color: var(--vp-c-text-2);
     font-size: 15px;
     /* 右对齐 */
-    text-align: right;
+    /* text-align: right; */
 }
 
 .icon {
