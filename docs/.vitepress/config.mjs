@@ -26,6 +26,13 @@ export default defineConfig({
             lazyLoading: true,   // 默认禁用；设置为 true 可为所有图片启用懒加载。
         },
         lineNumbers: false,    // 默认禁用；设置为 true 可在代码块中禁用行号。
+        config: (md) => {
+            md.renderer.rules.heading_close = (tokens, idx, options, env, slf) => {
+                let htmlResult = slf.renderToken(tokens, idx, options);
+                if (tokens[idx].tag === 'h1') htmlResult += `<ArticleMetadata />`; 
+                return htmlResult;
+            }
+        }
     },
     themeConfig: {
         // https://vitepress.dev/reference/default-theme-config
